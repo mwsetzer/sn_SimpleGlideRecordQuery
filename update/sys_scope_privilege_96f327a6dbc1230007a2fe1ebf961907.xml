@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_scope_privilege">
+    <sys_scope_privilege action="INSERT_OR_UPDATE">
+        <operation>read</operation>
+        <source_scope display_value="QueryUtils">b941cfeedb41230007a2fe1ebf961915</source_scope>
+        <status>allowed</status>
+        <sys_class_name>sys_scope_privilege</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2018-10-12 22:39:47</sys_created_on>
+        <sys_id>96f327a6dbc1230007a2fe1ebf961907</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_278456_needit_what_needed_values</sys_name>
+        <sys_package display_value="QueryUtils" source="x_278456_queryutil">b941cfeedb41230007a2fe1ebf961915</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="QueryUtils">b941cfeedb41230007a2fe1ebf961915</sys_scope>
+        <sys_update_name>sys_scope_privilege_96f327a6dbc1230007a2fe1ebf961907</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2018-10-12 22:39:47</sys_updated_on>
+        <target_name>x_278456_needit_what_needed_values</target_name>
+        <target_scope display_value="Needit">6f8c4bd3dbf8230007a2fe1ebf961948</target_scope>
+        <target_type>sys_db_object</target_type>
+    </sys_scope_privilege>
+</record_update>

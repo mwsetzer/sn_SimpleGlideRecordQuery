@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
+    <sys_script_include action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <active>true</active>
+        <api_name>x_278456_queryutil.SimpleGlideRecordQuery</api_name>
+        <client_callable>false</client_callable>
+        <description/>
+        <name>SimpleGlideRecordQuery</name>
+        <script><![CDATA[var SimpleGlideRecordQuery = Class.create();
+
+SimpleGlideRecordQuery.prototype = {
+	
+	initialize: function(){},
+	
+    //@String  table   - name of the table to query
+	//@Array   queries - array of objects in the form of {'field':'<fieldName>','value':'<fieldValue>'}
+	//                   where clause <fieldName> = '<fieldValue>'
+	//@String  orderBy - name of the field to order this query by
+	getSimpleGlideRecordQuery: function(table,queries,orderBy){
+		
+		var gr = new GlideRecord(table);
+		
+		//add parameters to the query
+		for (var q in queries){
+			gr.addQuery(queries[q].field,queries[q].value);
+		}
+		if (orderBy)
+			gr.orderBy(orderBy);
+		gr.query();
+		return gr;
+	},
+    type: 'SimpleGlideRecordQuery'
+};]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2018-10-12 21:31:30</sys_created_on>
+        <sys_id>b9514fa2db81230007a2fe1ebf961910</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_name>SimpleGlideRecordQuery</sys_name>
+        <sys_package display_value="QueryUtils" source="x_278456_queryutil">b941cfeedb41230007a2fe1ebf961915</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="QueryUtils">b941cfeedb41230007a2fe1ebf961915</sys_scope>
+        <sys_update_name>sys_script_include_b9514fa2db81230007a2fe1ebf961910</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2018-10-12 22:42:23</sys_updated_on>
+    </sys_script_include>
+</record_update>
